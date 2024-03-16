@@ -1,0 +1,21 @@
+<style>
+        h1{
+            font-weight: bold;  }
+        div{
+            color: blueviolet;
+        }
+        .divs{
+            color: rgb(61, 59, 84); 
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #uno{
+            color: rgb(36, 230, 230);
+        }
+        
+</style>
+<body>
+        <div id="uno">
+        <div class="divs">
+        <h1 type="text">
+</body>

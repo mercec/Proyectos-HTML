@@ -1,0 +1,15 @@
+<style>
+        h1{
+            font-weight: bolder;
+        }
+        input{
+            font-size: medium;
+            
+        }
+</style>
+<body>
+        <input type="text" id="nombre">
+        <input type="text" id="apellido">
+        <input type="text" id="edad">
+        <input type="text" id="telefono">
+</body>
