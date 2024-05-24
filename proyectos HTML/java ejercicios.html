@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            //listo//
+            let hola = "hola, buen dia";
+            console.log(hola)
+            // no funcionan porq tienen las mismas variables//
+             let variable = 123;
+            let variable1 = "argentina";
+            console.log(variable1);
+            // ??//
+            let miNumero = 123;
+            console.log(miNumero);
+            let miNumero1 = 12.3;
+            console.log(miNumero1);
+            let miString = "argentina";
+            console.log(miString);
+            let miBoolean = true;
+            console.log(miBoolean);
+            let indefinido;
+            console.log(indefinido);
+            let miObjeto = {};
+            console.log(miObjeto);
+            //no, muestra "NaN"//
+            let Mipalabra = "electronica";
+            console.log(parseInt(Mipalabra));
+            //se suman, pero claramente hice algo mal porq me da 22??¿//
+            let miNumero2 = 123;
+            let miNumero3 = "2";
+            console.log(parseInt+miNumero3+(miNumero3));
+            //da 55//
+            let numuero = 0;
+            for(let e=1; e<=10; e++){
+                numuero+=e; 
+            }
+                  console.log(numuero);
+            //
+            let palabras = ["dado", "electronica", "escocia", "rosario"];
+            function encontrarPosicionA(palabra){
+                return palabra.split(' ').findIndex(letra=>letra === 'a');
+            }
+            for (let palabra of palabras){
+                let posicion = encontrarPosicionA(palabra);
+                console.log(`Posicion de la letra 'a' en la palabra"${palabra}": ${posicion}`);
+            }
+            //
+            let palabra2 = "caminando en linea recta no se puede llegar lejos";
+            let longitud = palabra2.split(` `).length;
+            if (longitud > 50){
+                console.log("la frase tiene más de 50 palabras");
+            }
+            if (longitud < 50){
+                console.log("la frase tiene menos de 50 palabras");
+            }
+            //
+            let miArraydeNumeros = new Array();
+            miArraydeNumeros[0] = 1 ;
+            miArraydeNumeros[1] = 15 ;
+            miArraydeNumeros[2] = 157 ;
+            miArraydeNumeros[3] = 63 ;
+            miArraydeNumeros[4] = 68 ;
+            miArraydeNumeros[5] = 1000 ;
+            miArraydeNumeros[6] = 44 ;
+
+            for (let i = 0; i < miArraydeNumeros.length; i++){
+                if (miArraydeNumeros[i] % 2 == 0){
+                    console.log(miArraydeNumeros[i] +"es numero par");
+                }
+                else{
+                    console.log(miArraydeNumeros[i] + "no es numero par")
+                }
+            }
+        //
+        var numero1 = 5;
+        var numero2 = 8;
+        if (numero1>= numero2) {
+            console.log("numero no es mayor que numero2");
+        }
+        if (numero2 > 0) {
+            console.log("numero2 es positivo");
+        }
+        if (numero1 !=0){
+            console.log("numero1 es distinto a cero");
+        }
+        if (numero1 + 1 < numero2){
+            console.log("incrementar en una unidad el valor de numero1 no lo hace mayor o igual que numero2");
+        }
+        // 11 //
+        let nombre = "Merce";
+        let edad = 18;
+        let ciudad = "Chascomus";
+        console.log('Nombre', nombre, 'Edad', edad, 'Ciudad', ciudad,);
+        const PI = 3.14159;
+        console.log (PI);
+        // 12 //
+        let precio = 29.99;
+        console.log(precio);
+        let disponible = false;
+        console.log(disponible);
+        let frutas = ['manzanas', 'banana', 'naranja'];
+        console.log(frutas);
+        
+        let info = { nombre: 'Juan', edad: 30, ciudad: 'Madrid'};
+
+        // 13 //
+
+        let frutas1 = ['manzana', 'banana', 'naranja'];
+        console.log("Elementos del array frutas:");
+        for (let i = 0; i < frutas1.length; i++){
+            console.log(frutas1[i]);
+        }
+        function sumarNumeros(numeros) {
+            let suma = 0;
+            for (let numero of numeros){
+                suma += numero;
+            }
+            return suma;
+        }
+        let numeros = [1, 2, 3, 4, 5];
+        console.log("La suma de los numeros es:", sumarNumeros(numeros));
+        function encontrarLargoPalabras(palabras1){
+            let longitudes = [];
+            for (let palabras of palabras1){
+                longitudes.push(palabras1.length);
+            }
+            return longitudes;
+        }
+        let palabras2 = ['casa', 'perro', 'computadora'];
+        console.log("Longitudes de las palabras:", encontrarLargoPalabras(palabras2));
+
+        // 14 //
+
+        let numeros1 = [1, 2, 3, 4, 5];
+        let cuadrados = numeros1.map(numero1 => numero1 * numero1);
+        console.log(cuadrados);
+        let numeros2 = [1, 2, 3, 4, 5];
+        let suma1 = numeros2.reduce((acumulador, numeros2)=>acumulador + numeros2, 0);
+        console.log(suma1);
+        let numeros3 = [1, 2, 3, 4, 5];
+        let pares = numeros3.filter(numeros3 => numeros3 % 2 === 0);
+        console.log(pares);
+        
+            </script>
+        </body>
+    </head>
+</html>
