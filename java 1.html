@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body> 
+            <input type="text" class="formulario" id="nombre" placeholder="ingrese su nombre" value="mercee">
+            <input type="text" class="formulario" id="apellido" placeholder="ingrese su apellido">
+            <input type="text" class="formulario" id="telefono" placeholder="ingrese su telefono">
+            <div id="contenido">
+            <span>
+                contenido 3
+            </span>
+            <span>
+                contenido 2
+            </span>
+            <span>
+                contenido 1
+            </span>
+            </div>
+            <script>
+                const nombre = document.getElementById('nombre').value;
+                console.log(nombre);
+                //
+                const letras = document.getElementById('nombre').value.length;
+                console.log(letras);
+                //
+                const cantidadFormulario = document.getElementsByClassName('formulario').length;
+                console.log(cantidadFormulario);
+                //
+                const formularios = document.getElementsByClassName('formulario');
+                for(let i = 0; i < formularios.length; i++){
+                    console.log("id del formulario", i + 1, ":", formularios[i].id);
+                }
+                //
+                document.getElementById('contenido').style.backgroundcolor = 'red';
+                //
+                const cantidadSpan = document.querySelectorAll('span').length;
+                console.log("cantidad de elementos 'span':", cantidadSpan);
+
+            </script>
+        </body>
+    </head>
+</html>
