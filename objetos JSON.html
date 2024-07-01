@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+            // ejercicio 1: done! \\   
+                let personal = {"Nombre": "merce", "apellido":"canosa"};
+                console.log(personal);
+            // ejercicio 2: done! \\
+                console.log("Nombre:", personal.Nombre);
+            // ejercicio 3: done! \\
+                let personal1 = {"nombre": "max", "apellido":"jeagerman"};
+                let personas = [personal, personal1];
+                    personas.forEach(personaActual => {
+                        console.log(personaActual);
+                    });
+            // ejercicio 4: done? no se si lo tenia que hacer asi \\
+                let personal2 = {};
+                    personal2.nombre= "grace";
+                    personal2.apellido= "chastity";
+                    personal2.edad= 18;
+                    personas.push(personal2);
+                    personas.forEach(personaActual => {
+                        console.log(personaActual);
+                    });
+            // ejercicio 4.1: \\
+            let objetMixto = {
+                text :"holiss",
+                numero: 123,
+                objetos: { clave: "valor" },
+                lista: [5, 6, 7, 8],
+                booleano: true,
+                nulo: null
+            };
+            console.log("objeto con atributos de diferentes tipos")
+            console.log(objetMixto);
+            // ejercicio 5:done! \\
+            const myObj = {"nombre": "Pete","edad": 18,"ciudad": "Hatchetfield"};
+            const myJSON = JSON.stringify(myObj);
+            console.log(myJSON);
+
+            const text1 = '{"nombre":"stephanie","edad":"18"}';
+            let obj = JSON.parse(text1);
+            console.log(obj);
+            // ejercicio 6: ??\\
+            localStorage.setItem("testJSON", myJSON);
+            let text2 = localStorage.getItem("testJSON");
+            // ejercicio 7: done! \\
+            let miMascota = {"nombre":"Wiggly","raza":"Devil","edad":+10000};
+                    let descripcion = `El nombre de mi mascota es ${miMascota.nombre} y tiene ${miMascota.edad} de años`;
+                    console.log(descripcion);
+             </script>
+            <div id="contenido"></div>
+            <script>
+            // ejercicio 8: \\
+                let objetosRetirados = [
+                    {"tipo":"netbook","codigo":15,"retirada":true},
+                    {"tipo":"netbook","codigo":1,"retirada":false}];
+                let miHtml = "";
+                document.querySelector("#contenido").innerHTML = "";
+                objetosRetirados.forEach(elem=>{
+                    miHtml+=`<div>
+                                <span>${elem.tipo}</span>
+                                <span>${elem.codigo}</span>
+                                <span>${elem.retirada}</span>
+                            </div>`;
+                });
+                document.querySelector("#contenido").innerHTML = miHtml;
+            </script>
+        </body>
+    </head>
+</html>
