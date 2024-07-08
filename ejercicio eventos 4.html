@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = es>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coordenadas del Mouse</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #coordenadas{
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Muestra de coordenadas del Mouse</h1>
+    <div id="coordenadas">Posicion del mouse: </div>
+
+    <script>
+        const coordenadasElementos = document.getElementById('coordenadas');
+        const x = event.clientX;
+        const y = event.clientY;
+
+        coordenadasElemento.textContent = `Posicion del mouse: (${x}, ${y})`;
+        
+        document.addEventListener('mousemove', mostrarCoordenadas);
+    </script>
+</body>
+</html>    

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="div1">Div 1</div>
+        <input type="button" onclick="mostrar()" value="mostrar/ocultar">
+        <script>
+            function mostrar(){
+                let div = document.querySelecttor("#div1");
+                let estado = div.style.display;
+                if(estado=="none"){
+                    div.style.display="block";
+                }else{
+                    div.style.display="nome";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>

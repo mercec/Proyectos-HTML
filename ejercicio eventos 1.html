@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <input type="text" class="edad" id="0">
+                </td>
+                <td>
+                    <input type="checkbox" id="check-0">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" class="edad" id="1">
+                </td>
+                <td>
+                    <input type="checkbox" id="check-1">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="button" onclick="validarEdades()" value="validar">
+                </td>
+            </tr>
+        </table>
+
+        <script>
+            function validarEdades(){
+                let edades = document.querySelectorAll(".edad");
+                edades.foreach(function(elem, ind){
+                    let check = document.querySelector("#check-" + ind);
+
+                    if(elem.value>18){
+                        check.checked = true;
+                    }else{
+                        check.checked = false;
+                    };
+                });
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <input type="text" id="palabra">
+        <input type="button" onclick="dibujarPalabra()" value="dibujar">
+        <div id="dibujo">
+        
+        </div>
+
+        <script>
+            function dibujarPalabra(){
+                let palabra = document.querySelector("#palabra");
+                let dibujo = document.querySelector("#dibujo");
+
+                for (const letra of palabra.value){
+                    dibujo.innerHTML+=`<span onclick="mostrarLetra('${letra}')"><h1>${letra}</h1></span>`;
+                }
+            }
+
+            function mostrarLetra(letra){
+                alert(letra);
+            }
+        </script>
+    </body>
+</html>
